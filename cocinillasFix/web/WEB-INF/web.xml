@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+   
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <!--Esther-->
+    <servlet>
+        <servlet-name>checkUsuario</servlet-name>
+        <servlet-class>userManagement.CheckUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>checkUsuario</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>registroUsuario</servlet-name>
+        <servlet-class>userManagement.Registro</servlet-class>
+    </servlet>
+     <servlet-mapping>
+        <servlet-name>registroUsuario</servlet-name>
+        <url-pattern>/pages/registro</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>userManagement.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/pages/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>accederPagUsuario</servlet-name>
+        <servlet-class>usuario.PagUsuario</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>accederPagUsuario</servlet-name>
+        <url-pattern>/pages/accederPagUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>editarPerfil</servlet-name>
+        <servlet-class>userManagement.EditarPerfil</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editarPerfil</servlet-name>
+        <url-pattern>/pages/editarPerfil</url-pattern>
+    </servlet-mapping> 
+    
+    <!--Raquel-->
+    <servlet>
+        <servlet-name>filtrarRecetas</servlet-name>
+        <servlet-class>busquedaRecetas.filtrarRecetas</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>filtrarRecetas</servlet-name>
+        <url-pattern>/pages/filtrarRecetas</url-pattern>
+    </servlet-mapping>
+    
+    <!--Cristina-->
+     <servlet>
+        <servlet-name>verReceta</servlet-name>
+        <servlet-class>verRecetas.VerReceta</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>verReceta</servlet-name>
+        <url-pattern>/pages/receta</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>anyadirCom</servlet-name>
+        <servlet-class>verRecetas.AnyadirComent</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>anyadirFav</servlet-name>
+        <servlet-class>verRecetas.AnyadirFav</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>anyadirLike</servlet-name>
+        <servlet-class>verRecetas.AnyadirLike</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>cerrarSesion</servlet-name>
+        <servlet-class>userManagement.CerrarSesion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cerrarSesion</servlet-name>
+        <url-pattern>/pages/cerrarSesion</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
+    
+    

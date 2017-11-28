@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modificar Receta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/font.css">  
+        <link rel="stylesheet" type="text/css" href="../css/marco.css">
+        <link rel="stylesheet" type="text/css" href="../css/añadirReceta.css">
+   
+        
+        
+    </head>
+    <body>  
+<a class="scrollToTop" href="#"></a>
+<div class="container">
+  <header id="header">
+  </header>
+  <section id="navArea">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="logo_area" id="izquierda"><a href="principal.html" class="logo"><img src="../images/logo.jpg" alt=""></a></div>
+      <div id="derecha">
+        <div><img src="../images/banner.jpg" class="banner"></div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav main_nav">
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Recetas</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="./entrantes.html">Entrantes</a></li>
+                <li><a href="./primeros.html">Primeros</a></li>
+                <li><a href="./segundos.html">Segundos</a></li>
+                <li><a href="./postres.html">Postres</a></li>
+              </ul>
+            </li>
+            <li><a href="./foro.html">Foro</a></li>
+            <li><a href="./ranking.html">Ranking</a></li>
+            <li><a href="./miespacio_misrecetas.html">Mi espacio</a></li>
+            <li><a href="./anyadirReceta.html" >Nueva Receta</a></li>
+            <li><div><input class="search" type="search" placeholder="cena"><a class="submit" href="./busqueda.html"><img class="imagen" src="../images/search.png"></a></div></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div>
+           <div class="general">
+            <div id="cuerpoReceta">
+                <form action="/my-handling-form-page" method="post">                   
+                    <div>
+                       <input type="text" class="tituloMod" name="tituloMod" value= "Pizza de verduras"  /> 
+                       <input type="text" class="comensalesMod" name="comensales" value= "2"  />
+                    </div>
+                    <div><textarea id="prep" name="prep">Comenzaremos preparando la masa. Pondremos en un bol la harina y la sal. Le añadiremos el agua y amasaremos bien. Después le pondremos el aceite y amasaremos bien durante un par de minutos. Después haremos una bola con la masa y la dejaremos unos 25 minutos reposando en el bol, tapado con un trapo.
+                    Ahora vamos con el "relleno". Limpiaremos y picaremos las verduras. Calentaremos un chorrito de aceite en una sartén y añadiremos el pimiento y la cebolla picados.
+                    Un par de minutos después añadiremos la cebolla y después el calabacín y la berenjena. Le pondremos un poco de sal y dejaremos que todo se poche bien.
+                    Cuando la masa haya reposado el tiempo suficiente tenemos que estirarla y darle forma. La pondremos sobre una superficie plana con un poco de harina para que no se pegue. Con la ayuda de un rodillo y las manos iremos estirándola, hasta conseguir una masa fina y redonda.
+                    Ahora le pondremos el tomate frito por encima y lo esparciremos de manera homogénea por toda la base.
+                    Después le pondremos las verduras ya pochadas por encima y le colocaremos trocitos de queso fresco. Calentaremos el horno a unos 200ºC y dejaremos la pizza hasta que veamos que la masa está hecha. Ya podéis comer!
+
+</textarea></div>
+                    <div> 
+                        <img class="mini" src="../images/pizza.jpg">
+                         <label for="file">Foto<input type="file" name="file" id="file" class="inputfile"/></label>
+                        <label for="file">Video<input type="file" name="file" id="file" class="inputfile" /></label>
+                       
+                    </div>
+                    <div id="etiq">
+                        <input type="text" id="etiqueta" name="etiqueta" value= "pizza, verduras"  /> 
+                    <div>
+                        <input class="ok" type="button" value="Modificar">
+                        <input class="cancel" type="button" value="Cancelar">
+                    </div>
+                </form>
+                
+            </div>
+            </div>
+            <div class="ingredientes">
+                <div>
+                <h2>Ingredientes:</h2>
+                </div>
+                <div>
+                    <div><input type="text" id="ing1" name="ing2" value= "250 gr harina para pizza"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "1 cucharadita sal fina"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "3 cucharadas soperas aceite de oliva"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "125 ml agua"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "1 pimiento verde"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "1 pimiento rojo"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "1/2 calabacín"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "1/2 berenjena"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "1/2 cebolla"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "100 gr queso fresco"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "3 cucharadas tomate frito casero"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" value= "Aceite de oliva virgen extra"  /> <img src="../images/quita.png"></div>
+                    <div><input type="text" id="ing1" name="ing2" placeholder= "Añadir ingrediente..."  /> <img src="../images/mas.png"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>     
+    <footer id="footer">
+        <div class="footer_bottom">
+            <p class="developer">Developed  By G14 
+  </footer>
+  
+</div>
+</body>
+</html>
+
